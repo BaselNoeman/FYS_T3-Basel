@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1024.0" style="-fx-background-color: #2F3F68;;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.fys.SearchLugContoller">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eb2227" height="109.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: #78819C;;" width="1024.0" />
+        <Label fx:id="label" layoutX="373.0" layoutY="25.0" minHeight="16" minWidth="69" text="Search luggage" textFill="WHITE">
+            <font>
+                <Font name="Avenir Light" size="40.0" />
+            </font>
+        </Label>
+              <JFXButton fx:id="openHelpButton" buttonType="RAISED" layoutX="875.0" layoutY="47.0" onAction="#openHelp" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #2F3F68;;" text="Help" textFill="WHITE">
+            <font>
+                <Font name="Avenir Light" size="13.0" />
+            </font>
+        </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="500.0" layoutX="172.0" layoutY="160.0" stroke="BLACK" strokeType="INSIDE" width="700.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="80.0" layoutX="172.0" layoutY="184.0" stroke="BLACK" strokeType="INSIDE" width="700.0" />
+      <JFXButton fx:id="openSubmit2Button" buttonType="RAISED" layoutX="875.0" layoutY="675.0" onAction="#openResult2" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #78819C;;" text="Volgende" textFill="WHITE">
+         <font>
+            <Font name="Avenir Light" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="286.0" layoutY="195.0" prefHeight="58.0" prefWidth="473.0" text="Luggage information" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="FlightInput" layoutX="290.0" layoutY="318.0" prefHeight="25.0" prefWidth="464.0" promptText="Flight departure" />
+      <TextField fx:id="FlightAInput" layoutX="290.0" layoutY="358.0" prefHeight="25.0" prefWidth="464.0" promptText="Flight arrival" />
+      <TextField fx:id="ColorInput" layoutX="290.0" layoutY="398.0" prefHeight="25.0" prefWidth="464.0" promptText="Color" />
+      <TextField fx:id="SizeInput" layoutX="290.0" layoutY="438.0" prefHeight="25.0" prefWidth="464.0" promptText="Size" />
+      <TextField fx:id="BrandInput" layoutX="290.0" layoutY="478.0" prefHeight="25.0" prefWidth="464.0" promptText="Brand" />
+      <JFXButton fx:id="homeButton" buttonType="RAISED" layoutX="72.0" layoutY="675.0" onAction="#openHome" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #78819C;;" text="Terug" textFill="WHITE">
+         <font>
+            <Font name="Avenir Light" size="13.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>
